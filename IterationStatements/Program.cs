@@ -25,11 +25,10 @@ namespace IterationStatements
             do
             {
                 num++; // Increment num by 1 - DONE
-
+                numbers.Add(num);
                 // Then add num to the collection - numbers - DONE
                 // Hint: reference num inside of the Add method's parentheses
-                numbers.Add(num); 
-
+                
             } while (num < 100); // <---- While your variable is less than 100 - DONE
 
 
@@ -39,7 +38,7 @@ namespace IterationStatements
             {
                 num++; // Increment num by 1 - DONE
                 numbers.Add(num); // Then add num to the collection numbers - DONE
-                    //HINT: copy how this was done in the do while loop
+                                 //HINT: copy how this was done in the do while loop
 
             }
 
@@ -48,9 +47,9 @@ namespace IterationStatements
             Console.WriteLine("Increase:");
 
 
-            foreach (var number in numbers)
+            foreach (var item in numbers)
             {
-                Console.WriteLine(numbers);
+                Console.WriteLine(item);
             } // Create a foreach loop using the collection - numbers - 
                 //In the scope of the foreach loop, print each number in numbers - DONE
              
@@ -60,13 +59,13 @@ namespace IterationStatements
             Console.WriteLine("Decrease:");
 
 
-            for (int i = 199; i <= numbers.Count && i >= 0; --i) // Create a for loop - this will print the numbers in reverse order - from 200 to 1
-                // in your initializer set the value of i to 199 - DONE
-                // in your conditional, as long as i is less than or equal to the amount of items in "numbers" - use (numbers.Count) - DONE
-                // AND as long as i is greater than or equal to 0 - DONE
-                // Decrement i by 1 - DONE
+            // Create a for loop - this will print the numbers in reverse order - from 200 to 1
+            // in your initializer set the value of i to 199 - DONE
+            // in your conditional, as long as i is less than or equal to the amount of items in "numbers" - use (numbers.Count) - DONE
+            // AND as long as i is greater than or equal to 0 - DONE
+            // Decrement i by 1 - DONE
 
-            //start for loop here
+            for(int i = 199; i <= numbers.Count && i >= 0; --i)//start for loop here
             {
                 Console.WriteLine(numbers[i]); // place numbers[i] inside of the Console.WriteLine() method - DONE
             }
